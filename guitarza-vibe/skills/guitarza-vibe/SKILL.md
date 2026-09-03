@@ -95,10 +95,21 @@ Always. A link that does not decode is a link that does not open. If you can
 open a browser, open it: the Share panel's status line reports anything the
 loader refused.
 
-### 6 — Shortlink, if you can
-If a shortlink MCP is available (`shortlink_create`), shorten the `#gz=` URL and
-lead with the short link; keep the long one as the fallback. A deep link is
-already short — leave it.
+### 6 — Shortlink on a47l.com
+```bash
+python3 "$CLAUDE_PLUGIN_ROOT/scripts/encode.py" doc.json --kind groove --live --short [--slug tresillo]
+# → https://a47l.com/ab12          (the short link, first)
+#   https://guitarza.netlify.app/#gz=…   (the long one, always)
+```
+`--short` mints on **a47l.com** through the house shortener
+(`shortlink-headless`), reading `SHORTLINK_TOKEN` (and optionally
+`SHORTLINK_API_URL`) from the environment — the same variables the `/shortlink`
+skill and the shortlink MCP use, so there is one place a token lives. Without a
+token it prints the long link and says why on stderr; never withhold the link
+that works. The `shortlink_create` MCP tool does the same job when present.
+**Lead with the short link, keep the long one as the fallback.** A deep link is
+already short — leave it. The app's own Share panel has a **Shorten** button
+that does this server-side, so a person at the keyboard never needs the token.
 
 ### 7 — Deliver
 - the clickable link (it opens the studio with the thing loaded),
@@ -162,8 +173,9 @@ re-verify.
   particular voicing; a `lesson` with explicit shapes can.
 - **Custom kits, samples, audio: no.** The kit is synthesised from twelve
   pieces; a groove is placement and stroke, not sound design.
-- **No shortlink without the MCP.** If `shortlink_create` is not available,
-  deliver the long link and say so.
+- **No short link without a token.** If `SHORTLINK_TOKEN` is not set and no
+  shortlink MCP is present, deliver the long link and say so — never a
+  made-up a47l.com URL.
 
 ---
 

@@ -20,6 +20,50 @@ LIVE_BASE = 'https://guitarza.netlify.app/'
 LOCAL_BASE = 'http://localhost:5273/'
 ID_RE = r'^[a-z0-9][a-z0-9-]*$'
 
+# The house shortener: shortlink-headless on Netlify, fronting a47l.com. One
+# bearer token, one POST. Read from the environment the /shortlink skill and
+# the MCP server already use, so there is one place a token lives.
+SHORTLINK_API_URL = 'https://a47l.netlify.app'
+SHORTLINK_DOMAIN = 'a47l.com'
+
+
+def shorten(long_url, slug=None, notes='guitarza'):
+    """POST the long URL to a47l; return (short_url, None) or (None, reason).
+
+    Never raises: a shortener being down is not a reason to withhold the link
+    that works. The caller prints the long one either way.
+    """
+    import os
+    import urllib.request
+    import urllib.error
+    token = os.environ.get('SHORTLINK_TOKEN')
+    base = os.environ.get('SHORTLINK_API_URL', SHORTLINK_API_URL).rstrip('/')
+    if not token:
+        return None, 'SHORTLINK_TOKEN is not set (export it, as the /shortlink skill does)'
+    body = {'url': long_url, 'notes': notes}
+    if slug:
+        body['slug'] = slug
+    req = urllib.request.Request(
+        f'{base}/api/links', data=minify(body).encode('utf-8'), method='POST',
+        headers={'Authorization': f'Bearer {token}', 'Content-Type': 'application/json'})
+    try:
+        with urllib.request.urlopen(req, timeout=15) as r:
+            rec = json.loads(r.read().decode('utf-8'))
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode('utf-8', 'replace')[:120]
+        return None, f'a47l refused ({e.code}): {detail or e.reason}'
+    except (urllib.error.URLError, TimeoutError, ValueError) as e:
+        return None, f'a47l unreachable: {e}'
+    # Prefer a URL the service names; otherwise assemble it from the record.
+    short = rec.get('short_url') or rec.get('shortUrl')
+    if not short:
+        host = rec.get('hostname') or rec.get('domain') or os.environ.get('SHORTLINK_DOMAIN', SHORTLINK_DOMAIN)
+        s = rec.get('slug')
+        if not s:
+            return None, f'a47l answered without a slug: {minify(rec)[:120]}'
+        short = f'https://{host}/{s}'
+    return short, None
+
 
 def find_catalog(explicit=None):
     """The generated vocabulary, if it is next to this script (plugin layout)."""
@@ -136,6 +180,8 @@ def main():
     p.add_argument('--code', action='store_true', help='print just the code (paste into Share ▾ → Load)')
     p.add_argument('--json', action='store_true', help='print the minified envelope JSON (the exact compressed bytes)')
     p.add_argument('--decode', metavar='URL_OR_CODE', help='decode a share URL or code, print pretty JSON')
+    p.add_argument('--short', action='store_true', help=f'also mint a {SHORTLINK_DOMAIN} short link (needs SHORTLINK_TOKEN)')
+    p.add_argument('--slug', help='the short link slug to ask for, with --short')
     p.add_argument('--check', action='store_true', help='report shape problems the app would refuse, and stop')
     p.add_argument('--catalog', help='path to reference/catalog.json (found automatically in the plugin layout)')
     args = p.parse_args()
@@ -181,7 +227,17 @@ def main():
 
     base = args.base or (LIVE_BASE if args.live else LOCAL_BASE)
     base = base.split('#', 1)[0]
-    print(f'{base}#gz={code}')
+    long_url = f'{base}#gz={code}'
+    if not args.short:
+        print(long_url)
+        return
+    short, why = shorten(long_url, args.slug)
+    if short:
+        print(short)
+        print(long_url)
+    else:
+        print(long_url)
+        print(f'(no short link: {why})', file=sys.stderr)
 
 
 if __name__ == '__main__':

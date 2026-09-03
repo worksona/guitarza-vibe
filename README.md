@@ -21,9 +21,14 @@ encodes it with the bundled codec, decodes its own link to check it, and hands
 you the link plus two or three things to ask for next.
 
 ```bash
-python3 guitarza-vibe/scripts/encode.py song.json --kind song --live   # → a #gz= URL
-python3 guitarza-vibe/scripts/encode.py --decode '<url or code>'       # the reverse
+python3 guitarza-vibe/scripts/encode.py song.json --kind song --live          # → a #gz= URL
+python3 guitarza-vibe/scripts/encode.py song.json --kind song --live --short  # → an a47l.com short link, then the long one
+python3 guitarza-vibe/scripts/encode.py --decode '<url or code>'              # the reverse
 ```
+
+`--short` needs `SHORTLINK_TOKEN` in the environment (the same variable the
+`/shortlink` skill uses); without it the long link is printed and the reason
+goes to stderr.
 
 The reference tree is regenerated from the app repo with
 `node scripts/vibe-reference.mjs`; the hand-written guides in
