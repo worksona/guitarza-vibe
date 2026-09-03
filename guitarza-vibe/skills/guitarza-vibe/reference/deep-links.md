@@ -19,17 +19,26 @@ A progressions link says only what differs from the defaults
 An id the app does not have falls back to the section's first entry — it never errors.
 
 ## Lessons
-| id | title | level | tags |
-| --- | --- | --- | --- |
-| `first-chords` | Your First Four Chords | beginner | open chords, strumming, changes |
-| `sus-chords` | Sus Chords | beginner | open chords, colour, one finger |
-| `major-scale` | The Major Scale | beginner | scales, major, position playing |
-| `pentatonic-box-one` | Minor Pentatonic, Box 1 | beginner | scales, pentatonic, lead, blues |
-| `power-chords` | Power Chords & Palm Muting | beginner | rock, power chords, right hand, palm mute |
-| `barre-chords` | Barre Chords | intermediate | barre, movable shapes, CAGED |
-| `travis-picking` | Travis Picking | intermediate | fingerpicking, right hand, folk |
-| `legato` | Hammer-ons & Pull-offs | intermediate | technique, legato, pentatonic, lead |
-| `blues-shuffle` | 12-Bar Blues in A | intermediate | blues, shuffle, riff, 12-bar |
+| id | title | part | level | tags |
+| --- | --- | --- | --- | --- |
+| `first-chords` | Your First Four Chords | part 1 | beginner | open chords, strumming, changes |
+| `sus-chords` | Sus Chords | part 1 | beginner | open chords, colour, one finger |
+| `major-scale` | The Major Scale | part 1 | beginner | scales, major, position playing |
+| `pentatonic-box-one` | Minor Pentatonic, Box 1 | part 1 | beginner | scales, pentatonic, lead, blues |
+| `power-chords` | Power Chords & Palm Muting | part 1 | beginner | rock, power chords, right hand, palm mute |
+| `barre-chords` | Barre Chords | part 1 | intermediate | barre, movable shapes, CAGED |
+| `travis-picking` | Travis Picking | part 1 | intermediate | fingerpicking, right hand, folk |
+| `legato` | Hammer-ons & Pull-offs | part 1 | intermediate | technique, legato, pentatonic, lead |
+| `blues-shuffle` | 12-Bar Blues in A | part 1 | intermediate | blues, shuffle, riff, 12-bar |
+| `pentatonic-box-two` | Minor Pentatonic, Box 2 | part 2 | intermediate | scales, pentatonic, lead, position |
+| `caged` | The CAGED System | part 2 | intermediate | chords, CAGED, barre, position |
+| `seventh-chords` | Seventh Chords | part 2 | intermediate | chords, sevenths, jazz, colour |
+| `triads` | Triads Up the Neck | part 2 | intermediate | chords, triads, inversions, rhythm |
+| `bends-and-vibrato` | Bends & Vibrato | part 2 | advanced | technique, bends, vibrato, lead, blues |
+| `slides` | Slides & Position Shifts | part 2 | intermediate | technique, slides, position, lead |
+| `sixteenth-strumming` | Sixteenth-Note Strumming | part 2 | intermediate | rhythm, strumming, funk, right hand |
+| `mixolydian` | Mixolydian & the Dominant Sound | part 2 | intermediate | scales, modes, mixolydian, lead, rock |
+| `drop-d-riffing` | Drop D Riffing | part 2 | advanced | rock, riffs, drop D, palm mute, power chords |
 
 ## Chords
 Roots: `C` `Db` `D` `Eb` `E` `F` `F#` `G` `Ab` `A` `Bb` `B`

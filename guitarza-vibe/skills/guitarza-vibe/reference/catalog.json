@@ -26,6 +26,7 @@
     {
       "id": "first-chords",
       "title": "Your First Four Chords",
+      "part": 1,
       "level": "beginner",
       "tags": [
         "open chords",
@@ -38,6 +39,7 @@
     {
       "id": "sus-chords",
       "title": "Sus Chords",
+      "part": 1,
       "level": "beginner",
       "tags": [
         "open chords",
@@ -50,6 +52,7 @@
     {
       "id": "major-scale",
       "title": "The Major Scale",
+      "part": 1,
       "level": "beginner",
       "tags": [
         "scales",
@@ -62,6 +65,7 @@
     {
       "id": "pentatonic-box-one",
       "title": "Minor Pentatonic, Box 1",
+      "part": 1,
       "level": "beginner",
       "tags": [
         "scales",
@@ -75,6 +79,7 @@
     {
       "id": "power-chords",
       "title": "Power Chords & Palm Muting",
+      "part": 1,
       "level": "beginner",
       "tags": [
         "rock",
@@ -88,6 +93,7 @@
     {
       "id": "barre-chords",
       "title": "Barre Chords",
+      "part": 1,
       "level": "intermediate",
       "tags": [
         "barre",
@@ -100,6 +106,7 @@
     {
       "id": "travis-picking",
       "title": "Travis Picking",
+      "part": 1,
       "level": "intermediate",
       "tags": [
         "fingerpicking",
@@ -112,6 +119,7 @@
     {
       "id": "legato",
       "title": "Hammer-ons & Pull-offs",
+      "part": 1,
       "level": "intermediate",
       "tags": [
         "technique",
@@ -125,6 +133,7 @@
     {
       "id": "blues-shuffle",
       "title": "12-Bar Blues in A",
+      "part": 1,
       "level": "intermediate",
       "tags": [
         "blues",
@@ -134,6 +143,147 @@
       ],
       "tempo": 84,
       "key": "A major"
+    },
+    {
+      "id": "pentatonic-box-two",
+      "title": "Minor Pentatonic, Box 2",
+      "part": 2,
+      "level": "intermediate",
+      "tags": [
+        "scales",
+        "pentatonic",
+        "lead",
+        "position"
+      ],
+      "tempo": 76,
+      "key": "A minor pentatonic"
+    },
+    {
+      "id": "caged",
+      "title": "The CAGED System",
+      "part": 2,
+      "level": "intermediate",
+      "tags": [
+        "chords",
+        "CAGED",
+        "barre",
+        "position"
+      ],
+      "tempo": 72,
+      "key": "C major"
+    },
+    {
+      "id": "seventh-chords",
+      "title": "Seventh Chords",
+      "part": 2,
+      "level": "intermediate",
+      "tags": [
+        "chords",
+        "sevenths",
+        "jazz",
+        "colour"
+      ],
+      "tempo": 84,
+      "key": "C major"
+    },
+    {
+      "id": "triads",
+      "title": "Triads Up the Neck",
+      "part": 2,
+      "level": "intermediate",
+      "tags": [
+        "chords",
+        "triads",
+        "inversions",
+        "rhythm"
+      ],
+      "tempo": 88,
+      "key": "C major"
+    },
+    {
+      "id": "bends-and-vibrato",
+      "title": "Bends & Vibrato",
+      "part": 2,
+      "level": "advanced",
+      "tags": [
+        "technique",
+        "bends",
+        "vibrato",
+        "lead",
+        "blues"
+      ],
+      "tempo": 70,
+      "key": "A minor pentatonic"
+    },
+    {
+      "id": "slides",
+      "title": "Slides & Position Shifts",
+      "part": 2,
+      "level": "intermediate",
+      "tags": [
+        "technique",
+        "slides",
+        "position",
+        "lead"
+      ],
+      "tempo": 80,
+      "key": "A minor pentatonic"
+    },
+    {
+      "id": "sixteenth-strumming",
+      "title": "Sixteenth-Note Strumming",
+      "part": 2,
+      "level": "intermediate",
+      "tags": [
+        "rhythm",
+        "strumming",
+        "funk",
+        "right hand"
+      ],
+      "tempo": 96,
+      "key": "A minor"
+    },
+    {
+      "id": "mixolydian",
+      "title": "Mixolydian & the Dominant Sound",
+      "part": 2,
+      "level": "intermediate",
+      "tags": [
+        "scales",
+        "modes",
+        "mixolydian",
+        "lead",
+        "rock"
+      ],
+      "tempo": 92,
+      "key": "A mixolydian"
+    },
+    {
+      "id": "drop-d-riffing",
+      "title": "Drop D Riffing",
+      "part": 2,
+      "level": "advanced",
+      "tags": [
+        "rock",
+        "riffs",
+        "drop D",
+        "palm mute",
+        "power chords"
+      ],
+      "tempo": 108,
+      "key": "D minor"
+    }
+  ],
+  "parts": [
+    {
+      "part": 1,
+      "name": "Walkthroughs",
+      "lede": "Hand-authored material. Each lesson carries its own score, a walkthrough of shapes with coaching, and theory notes — the neck, the tab and the audio all stay in sync."
+    },
+    {
+      "part": 2,
+      "name": "The next level",
+      "lede": "After the walkthroughs. The neck stops being one place: a second box and the join between them, one chord in five positions, sevenths and triads — and then what the fretting hand does to a note after it is struck."
     }
   ],
   "chords": {
