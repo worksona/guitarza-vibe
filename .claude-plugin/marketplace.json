@@ -1,0 +1,20 @@
+{
+  "name": "guitarza",
+  "owner": {
+    "name": "Worksona",
+    "url": "https://github.com/worksona"
+  },
+  "metadata": {
+    "description": "Skills for Guitarza — an interactive guitar and drum studio where the neck, the tab, the notation and the sound stay in one loop.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "guitarza-vibe",
+      "source": "./guitarza-vibe",
+      "description": "Deep-link any piece of Guitarza's catalogue, or author a song sheet, drum groove, play-along or lesson from a sentence and deliver a #gz= link that opens the studio with it loaded.",
+      "version": "1.0.0",
+      "category": "creative"
+    }
+  ]
+}

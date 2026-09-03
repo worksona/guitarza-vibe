@@ -1,0 +1,20 @@
+{
+  "name": "guitarza-vibe",
+  "description": "Vibe Guitarza with words: hand someone a deep link to any lesson, chord, picking pattern, play-along, song or groove — or author a new song sheet, drum groove, play-along or lesson against the app's own vocabulary and deliver a #gz= link that opens the studio with it already loaded, on the neck, in the tab and in the audio.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Worksona",
+    "url": "https://github.com/worksona"
+  },
+  "homepage": "https://guitarza.netlify.app",
+  "repository": "https://github.com/worksona/guitarza-vibe",
+  "keywords": [
+    "guitarza",
+    "guitar",
+    "drums",
+    "tablature",
+    "notation",
+    "practice",
+    "shareable"
+  ]
+}

@@ -1,0 +1,990 @@
+{
+  "generated": "2026-09-03",
+  "app": {
+    "version": "0.1.0",
+    "live": "https://guitarza.netlify.app/"
+  },
+  "fragment": {
+    "deepLink": "#/<section>/…",
+    "share": "#gz=<code>"
+  },
+  "sections": [
+    "lessons",
+    "chords",
+    "picking",
+    "progressions",
+    "songs",
+    "drums"
+  ],
+  "kinds": [
+    "song",
+    "groove",
+    "lesson",
+    "practice"
+  ],
+  "lessons": [
+    {
+      "id": "first-chords",
+      "title": "Your First Four Chords",
+      "level": "beginner",
+      "tags": [
+        "open chords",
+        "strumming",
+        "changes"
+      ],
+      "tempo": 76,
+      "key": "G major"
+    },
+    {
+      "id": "sus-chords",
+      "title": "Sus Chords",
+      "level": "beginner",
+      "tags": [
+        "open chords",
+        "colour",
+        "one finger"
+      ],
+      "tempo": 84,
+      "key": "D major"
+    },
+    {
+      "id": "major-scale",
+      "title": "The Major Scale",
+      "level": "beginner",
+      "tags": [
+        "scales",
+        "major",
+        "position playing"
+      ],
+      "tempo": 80,
+      "key": "G major"
+    },
+    {
+      "id": "pentatonic-box-one",
+      "title": "Minor Pentatonic, Box 1",
+      "level": "beginner",
+      "tags": [
+        "scales",
+        "pentatonic",
+        "lead",
+        "blues"
+      ],
+      "tempo": 72,
+      "key": "A minor pentatonic"
+    },
+    {
+      "id": "power-chords",
+      "title": "Power Chords & Palm Muting",
+      "level": "beginner",
+      "tags": [
+        "rock",
+        "power chords",
+        "right hand",
+        "palm mute"
+      ],
+      "tempo": 132,
+      "key": "E minor"
+    },
+    {
+      "id": "barre-chords",
+      "title": "Barre Chords",
+      "level": "intermediate",
+      "tags": [
+        "barre",
+        "movable shapes",
+        "CAGED"
+      ],
+      "tempo": 68,
+      "key": "F major"
+    },
+    {
+      "id": "travis-picking",
+      "title": "Travis Picking",
+      "level": "intermediate",
+      "tags": [
+        "fingerpicking",
+        "right hand",
+        "folk"
+      ],
+      "tempo": 72,
+      "key": "C major"
+    },
+    {
+      "id": "legato",
+      "title": "Hammer-ons & Pull-offs",
+      "level": "intermediate",
+      "tags": [
+        "technique",
+        "legato",
+        "pentatonic",
+        "lead"
+      ],
+      "tempo": 76,
+      "key": "A minor"
+    },
+    {
+      "id": "blues-shuffle",
+      "title": "12-Bar Blues in A",
+      "level": "intermediate",
+      "tags": [
+        "blues",
+        "shuffle",
+        "riff",
+        "12-bar"
+      ],
+      "tempo": 84,
+      "key": "A major"
+    }
+  ],
+  "chords": {
+    "roots": [
+      "C",
+      "Db",
+      "D",
+      "Eb",
+      "E",
+      "F",
+      "F#",
+      "G",
+      "Ab",
+      "A",
+      "Bb",
+      "B"
+    ],
+    "qualities": [
+      "maj",
+      "min",
+      "7",
+      "m7",
+      "maj7",
+      "sus4",
+      "5",
+      "dim"
+    ]
+  },
+  "picking": [
+    {
+      "id": "travis",
+      "name": "Travis — alternating bass",
+      "kicker": "p i m · 8ths"
+    },
+    {
+      "id": "forward-roll",
+      "name": "Forward roll",
+      "kicker": "p i m a"
+    },
+    {
+      "id": "backward-roll",
+      "name": "Backward roll",
+      "kicker": "a m i p"
+    },
+    {
+      "id": "pinch-roll",
+      "name": "Pinch & roll",
+      "kicker": "p+a together"
+    },
+    {
+      "id": "waltz-roll",
+      "name": "Waltz roll — 6/8",
+      "kicker": "p i m a m i"
+    },
+    {
+      "id": "ballad-arpeggio",
+      "name": "Ballad arpeggio",
+      "kicker": "p i m i · 8ths"
+    },
+    {
+      "id": "monotonic-bass",
+      "name": "Monotonic bass",
+      "kicker": "p on every beat"
+    },
+    {
+      "id": "cascade",
+      "name": "Cascade",
+      "kicker": "p a m i"
+    },
+    {
+      "id": "inside-roll",
+      "name": "Inside roll",
+      "kicker": "p m i a"
+    },
+    {
+      "id": "threes",
+      "name": "Threes — 6/8",
+      "kicker": "p i m · twice"
+    }
+  ],
+  "progressions": [
+    {
+      "id": "pop-axis",
+      "name": "The four-chord song",
+      "numbers": "1 5 6m 4",
+      "defaultTempo": 92
+    },
+    {
+      "id": "three-chord",
+      "name": "Three chords and the truth",
+      "numbers": "1 4 5",
+      "defaultTempo": 104
+    },
+    {
+      "id": "fifties",
+      "name": "Fifties changes",
+      "numbers": "1 6m 4 5",
+      "defaultTempo": 84
+    },
+    {
+      "id": "two-five-one",
+      "name": "ii – V – I",
+      "numbers": "2m 5 1",
+      "defaultTempo": 100
+    },
+    {
+      "id": "twelve-bar",
+      "name": "12-bar blues",
+      "numbers": "1 4 1 5 4 1 5",
+      "defaultTempo": 88
+    },
+    {
+      "id": "minor-blues",
+      "name": "Minor blues",
+      "numbers": "1m 4m 1m 5m 1m",
+      "defaultTempo": 76
+    },
+    {
+      "id": "mixolydian-rock",
+      "name": "Rock mixolydian",
+      "numbers": "1 b7 4",
+      "defaultTempo": 112
+    },
+    {
+      "id": "andalusian",
+      "name": "Andalusian cadence",
+      "numbers": "1m b7 b6 5",
+      "defaultTempo": 96
+    },
+    {
+      "id": "one-four-five-four",
+      "name": "Round trip",
+      "numbers": "1 4 5 4",
+      "defaultTempo": 108
+    },
+    {
+      "id": "one-three-five",
+      "name": "Rising thirds",
+      "numbers": "1 3m 5",
+      "defaultTempo": 96
+    },
+    {
+      "id": "one-three-four",
+      "name": "Step up to four",
+      "numbers": "1 3m 4",
+      "defaultTempo": 92
+    },
+    {
+      "id": "six-four-one-five",
+      "name": "The sensitive one",
+      "numbers": "6m 4 1 5",
+      "defaultTempo": 88
+    },
+    {
+      "id": "one-five-four",
+      "name": "Down the stairs",
+      "numbers": "1 5 4",
+      "defaultTempo": 120
+    },
+    {
+      "id": "one-four-six-five",
+      "name": "Long way home",
+      "numbers": "1 4 6m 5",
+      "defaultTempo": 96
+    },
+    {
+      "id": "minor-one-flat-seven",
+      "name": "Minor vamp",
+      "numbers": "1m b7",
+      "defaultTempo": 100
+    }
+  ],
+  "keys": [
+    "C",
+    "G",
+    "D",
+    "A",
+    "E",
+    "B",
+    "F#",
+    "Db",
+    "Ab",
+    "Eb",
+    "Bb",
+    "F"
+  ],
+  "songs": [
+    {
+      "id": "campfire-four-chord",
+      "title": "Campfire four-chord",
+      "key": "G major",
+      "tempo": 92,
+      "level": "Beginner",
+      "chords": [
+        "G",
+        "D",
+        "Em",
+        "C"
+      ]
+    },
+    {
+      "id": "slow-blues-in-a",
+      "title": "Slow blues in A",
+      "key": "A major",
+      "tempo": 72,
+      "level": "Intermediate",
+      "chords": [
+        "A7",
+        "D7",
+        "E7"
+      ]
+    },
+    {
+      "id": "waltz-for-beginners",
+      "title": "Waltz for beginners",
+      "key": "C major",
+      "tempo": 96,
+      "level": "Beginner",
+      "chords": [
+        "C",
+        "Am",
+        "F",
+        "G"
+      ]
+    },
+    {
+      "id": "fifties-changes",
+      "title": "Fifties changes",
+      "key": "C major",
+      "tempo": 84,
+      "level": "Beginner",
+      "chords": [
+        "C",
+        "Am",
+        "F",
+        "G"
+      ]
+    },
+    {
+      "id": "the-long-way-round",
+      "title": "The long way round",
+      "key": "C major",
+      "tempo": 76,
+      "level": "Beginner",
+      "chords": [
+        "Am",
+        "F",
+        "C",
+        "G"
+      ]
+    },
+    {
+      "id": "mixolydian-rocker",
+      "title": "Mixolydian rocker",
+      "key": "E major",
+      "tempo": 120,
+      "level": "Intermediate",
+      "chords": [
+        "E",
+        "D",
+        "A"
+      ]
+    },
+    {
+      "id": "country-boom-chuck",
+      "title": "Country boom-chuck",
+      "key": "G major",
+      "tempo": 100,
+      "level": "Beginner",
+      "chords": [
+        "G",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "fingerstyle-ballad",
+      "title": "Fingerstyle ballad",
+      "key": "C major",
+      "tempo": 72,
+      "level": "Intermediate",
+      "chords": [
+        "C",
+        "G",
+        "Am",
+        "F"
+      ]
+    },
+    {
+      "id": "barre-workout",
+      "title": "Barre workout",
+      "key": "F major",
+      "tempo": 80,
+      "level": "Intermediate",
+      "chords": [
+        "F",
+        "Bb",
+        "C",
+        "Dm"
+      ]
+    },
+    {
+      "id": "two-five-one-study",
+      "title": "ii–V–I study",
+      "key": "C major",
+      "tempo": 108,
+      "level": "Advanced",
+      "chords": [
+        "Dm7",
+        "G7",
+        "Cmaj7",
+        "Am7"
+      ]
+    }
+  ],
+  "grooves": [
+    {
+      "id": "backbeat",
+      "name": "The backbeat",
+      "kind": "groove",
+      "family": null,
+      "level": "Beginner",
+      "tempo": 90,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 8,
+      "sticking": false
+    },
+    {
+      "id": "sixteenth-hats",
+      "name": "Sixteenth hats",
+      "kind": "groove",
+      "family": null,
+      "level": "Intermediate",
+      "tempo": 84,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 16,
+      "sticking": false
+    },
+    {
+      "id": "four-on-the-floor",
+      "name": "Four on the floor",
+      "kind": "groove",
+      "family": null,
+      "level": "Beginner",
+      "tempo": 124,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 8,
+      "sticking": false
+    },
+    {
+      "id": "shuffle",
+      "name": "Shuffle",
+      "kind": "groove",
+      "family": null,
+      "level": "Intermediate",
+      "tempo": 92,
+      "timeSignature": [
+        12,
+        8
+      ],
+      "stepValue": 8,
+      "sticking": false
+    },
+    {
+      "id": "half-time",
+      "name": "Half-time",
+      "kind": "groove",
+      "family": null,
+      "level": "Intermediate",
+      "tempo": 82,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 16,
+      "sticking": false
+    },
+    {
+      "id": "fill-and-crash",
+      "name": "Fill and crash",
+      "kind": "groove",
+      "family": null,
+      "level": "Intermediate",
+      "tempo": 96,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 16,
+      "sticking": false
+    },
+    {
+      "id": "single-strokes",
+      "name": "Single strokes",
+      "kind": "rudiment",
+      "family": "stroke",
+      "level": "Beginner",
+      "tempo": 70,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 16,
+      "sticking": true
+    },
+    {
+      "id": "double-strokes",
+      "name": "Double strokes",
+      "kind": "rudiment",
+      "family": "stroke",
+      "level": "Intermediate",
+      "tempo": 64,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 16,
+      "sticking": true
+    },
+    {
+      "id": "paradiddle",
+      "name": "Paradiddle",
+      "kind": "rudiment",
+      "family": "diddle",
+      "level": "Intermediate",
+      "tempo": 76,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 16,
+      "sticking": true
+    },
+    {
+      "id": "accent-and-tap",
+      "name": "Accent and tap",
+      "kind": "rudiment",
+      "family": "stroke",
+      "level": "Beginner",
+      "tempo": 68,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 16,
+      "sticking": true
+    },
+    {
+      "id": "ghost-notes",
+      "name": "Ghost notes",
+      "kind": "rudiment",
+      "family": "colour",
+      "level": "Intermediate",
+      "tempo": 88,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 16,
+      "sticking": true
+    },
+    {
+      "id": "flams",
+      "name": "Flams",
+      "kind": "rudiment",
+      "family": "grace",
+      "level": "Intermediate",
+      "tempo": 72,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 8,
+      "sticking": true
+    },
+    {
+      "id": "buzz-roll",
+      "name": "Buzz roll",
+      "kind": "rudiment",
+      "family": "stroke",
+      "level": "Advanced",
+      "tempo": 66,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 8,
+      "sticking": true
+    },
+    {
+      "id": "cross-stick",
+      "name": "Cross-stick",
+      "kind": "rudiment",
+      "family": "colour",
+      "level": "Beginner",
+      "tempo": 74,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 8,
+      "sticking": true
+    },
+    {
+      "id": "tom-sticking",
+      "name": "Moving it round the kit",
+      "kind": "rudiment",
+      "family": "kit",
+      "level": "Intermediate",
+      "tempo": 84,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 16,
+      "sticking": true
+    },
+    {
+      "id": "double-paradiddle",
+      "name": "Double paradiddle",
+      "kind": "rudiment",
+      "family": "diddle",
+      "level": "Intermediate",
+      "tempo": 80,
+      "timeSignature": [
+        12,
+        8
+      ],
+      "stepValue": 8,
+      "sticking": true
+    },
+    {
+      "id": "triple-paradiddle",
+      "name": "Triple paradiddle",
+      "kind": "rudiment",
+      "family": "diddle",
+      "level": "Advanced",
+      "tempo": 72,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 16,
+      "sticking": true
+    },
+    {
+      "id": "paradiddle-diddle",
+      "name": "Paradiddle-diddle",
+      "kind": "rudiment",
+      "family": "diddle",
+      "level": "Intermediate",
+      "tempo": 78,
+      "timeSignature": [
+        12,
+        8
+      ],
+      "stepValue": 8,
+      "sticking": true
+    },
+    {
+      "id": "inverted-paradiddle",
+      "name": "Inverted paradiddle",
+      "kind": "rudiment",
+      "family": "diddle",
+      "level": "Advanced",
+      "tempo": 74,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 16,
+      "sticking": true
+    },
+    {
+      "id": "moeller",
+      "name": "The Moeller whip",
+      "kind": "rudiment",
+      "family": "stroke",
+      "level": "Advanced",
+      "tempo": 66,
+      "timeSignature": [
+        12,
+        8
+      ],
+      "stepValue": 8,
+      "sticking": true
+    },
+    {
+      "id": "moeller-hats",
+      "name": "Moeller on the hats",
+      "kind": "rudiment",
+      "family": "stroke",
+      "level": "Advanced",
+      "tempo": 84,
+      "timeSignature": [
+        12,
+        8
+      ],
+      "stepValue": 8,
+      "sticking": true
+    },
+    {
+      "id": "five-stroke-roll",
+      "name": "Five-stroke roll",
+      "kind": "rudiment",
+      "family": "stroke",
+      "level": "Intermediate",
+      "tempo": 72,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 16,
+      "sticking": true
+    },
+    {
+      "id": "flam-tap",
+      "name": "Flam tap",
+      "kind": "rudiment",
+      "family": "grace",
+      "level": "Advanced",
+      "tempo": 68,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 8,
+      "sticking": true
+    },
+    {
+      "id": "drags",
+      "name": "Drags",
+      "kind": "rudiment",
+      "family": "grace",
+      "level": "Intermediate",
+      "tempo": 70,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 8,
+      "sticking": true
+    },
+    {
+      "id": "hat-foot",
+      "name": "The hi-hat foot",
+      "kind": "rudiment",
+      "family": "colour",
+      "level": "Intermediate",
+      "tempo": 88,
+      "timeSignature": [
+        4,
+        4
+      ],
+      "stepValue": 8,
+      "sticking": false
+    }
+  ],
+  "families": [
+    {
+      "id": "stroke",
+      "name": "Stroke control",
+      "blurb": "What one hand does, and how loud. Everything else is built on this."
+    },
+    {
+      "id": "diddle",
+      "name": "The paradiddle family",
+      "blurb": "Singles and doubles combined, so the sticking decides which hand leads the next group instead of you deciding mid-bar."
+    },
+    {
+      "id": "grace",
+      "name": "Grace notes",
+      "blurb": "Notes played just before the beat, to thicken the one that lands on it."
+    },
+    {
+      "id": "colour",
+      "name": "Sounds and feet",
+      "blurb": "Same placement, different noise — and the two limbs everyone forgets."
+    },
+    {
+      "id": "kit",
+      "name": "Around the kit",
+      "blurb": "The exercises, applied to more than one drum."
+    }
+  ],
+  "enums": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+    "lessonLevel": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "grooveKind": [
+      "groove",
+      "rudiment"
+    ],
+    "cell": [
+      "-",
+      "x",
+      "X",
+      "o",
+      "f",
+      "d",
+      "z"
+    ],
+    "stepValue": [
+      8,
+      16
+    ],
+    "kitPiece": [
+      {
+        "id": "kick",
+        "name": "Kick",
+        "midi": 36,
+        "limb": "foot"
+      },
+      {
+        "id": "snare",
+        "name": "Snare",
+        "midi": 38,
+        "limb": "hand"
+      },
+      {
+        "id": "sideStick",
+        "name": "Cross-stick",
+        "midi": 37,
+        "limb": "hand"
+      },
+      {
+        "id": "hatClosed",
+        "name": "Hi-hat",
+        "midi": 42,
+        "limb": "hand"
+      },
+      {
+        "id": "hatOpen",
+        "name": "Hi-hat open",
+        "midi": 46,
+        "limb": "hand"
+      },
+      {
+        "id": "hatPedal",
+        "name": "Hi-hat pedal",
+        "midi": 44,
+        "limb": "foot"
+      },
+      {
+        "id": "tomHigh",
+        "name": "High tom",
+        "midi": 48,
+        "limb": "hand"
+      },
+      {
+        "id": "tomMid",
+        "name": "Mid tom",
+        "midi": 45,
+        "limb": "hand"
+      },
+      {
+        "id": "tomFloor",
+        "name": "Floor tom",
+        "midi": 41,
+        "limb": "hand"
+      },
+      {
+        "id": "crash",
+        "name": "Crash",
+        "midi": 49,
+        "limb": "hand"
+      },
+      {
+        "id": "ride",
+        "name": "Ride",
+        "midi": 51,
+        "limb": "hand"
+      },
+      {
+        "id": "rideBell",
+        "name": "Ride bell",
+        "midi": 53,
+        "limb": "hand"
+      }
+    ],
+    "feel": [
+      "boom-chuck",
+      "strum",
+      "eighths",
+      "shuffle"
+    ],
+    "position": [
+      "open",
+      "sixth",
+      "fifth"
+    ],
+    "lead": [
+      "off",
+      "scale",
+      "arpeggio",
+      "targets"
+    ],
+    "run": [
+      "ascending",
+      "thirds",
+      "fours"
+    ],
+    "repeats": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "tuning": [
+      "standard",
+      "drop-d",
+      "open-g",
+      "open-d",
+      "dadgad",
+      "half-down"
+    ],
+    "strokeMark": {
+      "D": "Down — loud, finish low",
+      "T": "Tap — quiet, stay low",
+      "U": "Up — quiet, finish high",
+      "F": "Full — loud, finish high"
+    }
+  },
+  "practiceDefaults": {
+    "feel": "boom-chuck",
+    "position": "open",
+    "lead": "off",
+    "run": "ascending",
+    "repeats": 2
+  },
+  "limits": {
+    "tempo": [
+      30,
+      260
+    ],
+    "idPattern": "^[a-z0-9][a-z0-9-]*$"
+  }
+}
