@@ -31,7 +31,11 @@ you author ever reaches a server:
 | link | what it is | opens |
 | --- | --- | --- |
 | **deep link** `#/section/…` | the *address* of something in the catalogue | that thing, in its section |
-| **share code** `#gz=…` | a *document* the app has never seen — it lives in the URL | the document, loaded as if it were catalogue content, with a "Shared by link" card |
+| **share code** `#gz=…` | a *document* the app has never seen — it lives in the URL | the document, loaded as catalogue content **and kept in the player's library** |
+
+Opening a `#gz=` link saves it: it gets a "Yours" card in its section, an entry
+in the Library menu, and it is still there next time. So the link you hand back
+is not a one-off — it is how something gets *into* someone's app.
 
 The app: **https://guitarza.netlify.app**. Six sections, one studio: Lessons ·
 Chords · Picking · Progressions (play-along) · Songs · Drums. Whatever loads is on
@@ -64,6 +68,38 @@ enum, every range. `reference/deep-links.md` is the same for addresses. The
 chord spellings the voicing engine knows. **Never invent a kit piece, a grid
 character, a feel, a quality, a tuning or a progression id.** If it is not in
 the catalog, the app does not have it.
+
+### 2a — If they gave you a document, read it
+This is the main way new material arrives: a `.txt` or `.md` of tab, a chord
+sheet, a page of a book, a screenshot, a paste. **You are the parser** — the
+app has no tab importer and does not need one. Read the document and author
+the document kind that fits it:
+
+| what they gave you | author | why |
+| --- | --- | --- |
+| chords over lyrics, `[Am] Nobody knows`, a chord chart | `song` | one chord per bar; there is no rhythm to guess |
+| ASCII tab with a repeating riff or a worked-out part | `lesson` with `alphaTex` | you can write the rhythm the tab implies |
+| ASCII tab that is really just the chord changes | `song` | do not invent a rhythm you were not given |
+| drum tab (`HH\|x-x-x-x-\|`, `SD\|----o---\|`) | `groove` | the rows *are* the grid; this is close to a transcription |
+| "play along with this" over a known progression | a deep link, or a `practice` doc | |
+
+**ASCII tab does not carry rhythm.** Columns are suggestive, not authoritative;
+`--0---3--` does not say whether those are quarters or eighths. So:
+
+- If the source **does** imply rhythm (bar lines, a count, consistent spacing,
+  a tempo marking, a song you know), write it and **say what you assumed**.
+- If it does not, prefer `song` — a sheet is one chord per bar and needs no
+  rhythm — or ask for the tempo and feel rather than inventing them.
+- Never quietly pick a rhythm. The whole app is built on the neck, the tab and
+  the audio agreeing; a guessed rhythm is the first place it would lie.
+
+Tab notation maps onto things the app already plays: `h` hammer-on, `p`
+pull-off, `/` `\\` slides, `b` bend, `~` vibrato, `x` dead note, `PM` palm
+mute. Chord names above the staff are the shapes for the neck. String labels
+give the tuning (`D` on the bottom line is drop D). Frets in tab are numbers
+per string — but in a `lesson` shape you write `frets` **LOW → HIGH**, which
+is the reverse of how tab is printed, so read `schema-lesson.md` before
+authoring one.
 
 ### 2 — Interpret the vibe
 Map words to the vocabulary. "Boom bap" is a backbeat with a ghosted snare;
@@ -116,8 +152,11 @@ that does this server-side, so a person at the keyboard never needs the token.
 - one line on what you built,
 - **2–3 knobs** they can ask you to turn ("ghost the ands", "half-time it",
   "swap the chorus to the IV", "show target notes instead"),
-- for a share code: that it lives in the URL and nowhere else — bookmark it or
-  paste it into **Share ▾ → Load**.
+- for a share code: that opening it **saves it to their library** — a "Yours"
+  card in the section, and an entry in the Library menu, kept in that browser.
+  The link is also the backup and the way to move it to another machine.
+- when you read a document to make it: what you assumed about tempo and feel,
+  in one line, so they can correct it.
 
 ### 8 — Iterate by document-diff, never by rewrite
 On follow-ups, `--decode` the previous link (or the code they pasted) and patch
@@ -165,9 +204,10 @@ re-verify.
   freight train" is an intent, not a measurement. Build it, deliver it, ask.
 - **It cannot add to the instrument.** No new kit pieces, tunings, chord
   qualities, feels or progressions — those are app changes. Say so.
-- **A shared document is per-tab.** It is catalogue content for as long as the
-  tab is open and it lives in the URL; it is not saved anywhere. The link *is*
-  the document.
+- **A library is per browser.** Opening a link saves the document there, but
+  nothing is uploaded and nothing syncs between machines — the link is how it
+  travels. A `#/songs/shared-…` deep link only resolves in the browser that
+  has it saved; to hand something to someone else, always send the `#gz=` code.
 - **Voicing is the app's call.** Which fingering a song's `Am7` gets is decided
   by the voicing engine on load (open shape preferred). A share cannot pin a
   particular voicing; a `lesson` with explicit shapes can.
